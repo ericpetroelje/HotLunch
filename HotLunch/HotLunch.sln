@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotLunch.Web", "HotLunch.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotLunch.Database.Migrations", "HotLunch.Database.Migrations\HotLunch.Database.Migrations.csproj", "{D3658C86-5268-492F-B535-D6AD911F49F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotLunch.Domain.Library", "HotLunch.Domain.Library\HotLunch.Domain.Library.csproj", "{30B82D47-5935-4D4D-905B-DD72E5E6B3AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotLunch.Domain.Repository", "HotLunch.Domain.Repository\HotLunch.Domain.Repository.csproj", "{78E9F877-6C52-4C14-A9D7-7AE06C9ABF8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotLunch.Domain.Services", "HotLunch.Domain.Services\HotLunch.Domain.Services.csproj", "{887D6B38-C0AE-4DAC-937B-C89C47387942}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,18 @@ Global
 		{D3658C86-5268-492F-B535-D6AD911F49F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3658C86-5268-492F-B535-D6AD911F49F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3658C86-5268-492F-B535-D6AD911F49F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30B82D47-5935-4D4D-905B-DD72E5E6B3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30B82D47-5935-4D4D-905B-DD72E5E6B3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30B82D47-5935-4D4D-905B-DD72E5E6B3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30B82D47-5935-4D4D-905B-DD72E5E6B3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E9F877-6C52-4C14-A9D7-7AE06C9ABF8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E9F877-6C52-4C14-A9D7-7AE06C9ABF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E9F877-6C52-4C14-A9D7-7AE06C9ABF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E9F877-6C52-4C14-A9D7-7AE06C9ABF8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887D6B38-C0AE-4DAC-937B-C89C47387942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887D6B38-C0AE-4DAC-937B-C89C47387942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887D6B38-C0AE-4DAC-937B-C89C47387942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887D6B38-C0AE-4DAC-937B-C89C47387942}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

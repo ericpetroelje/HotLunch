@@ -175,6 +175,20 @@
   <ItemGroup>
     <Content Include="Views\Shared\_Navigation.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HotLunch.Domain.Library\HotLunch.Domain.Library.csproj">
+      <Project>{30b82d47-5935-4d4d-905b-dd72e5e6b3ad}</Project>
+      <Name>HotLunch.Domain.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HotLunch.Domain.Repository\HotLunch.Domain.Repository.csproj">
+      <Project>{78e9f877-6c52-4c14-a9d7-7ae06c9abf8e}</Project>
+      <Name>HotLunch.Domain.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HotLunch.Domain.Services\HotLunch.Domain.Services.csproj">
+      <Project>{887d6b38-c0ae-4dac-937b-c89c47387942}</Project>
+      <Name>HotLunch.Domain.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
