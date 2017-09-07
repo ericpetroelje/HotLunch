@@ -1,4 +1,5 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,5 +9,11 @@ namespace HotLunch.Web.Controllers
 {
     public class BaseController : Controller
     {
+        protected ILog Logger { get; private set; }
+
+        public BaseController()
+        {
+            this.Logger = LogManager.GetLogger(this.GetType().Name);
+        }
     }
 }

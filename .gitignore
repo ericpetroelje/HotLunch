@@ -3,3 +3,5 @@ HotLunch/packages/
 HotLunch/HotLunch.Web/bin/
 HotLunch/HotLunch.Web/obj/
 *.user
+HotLunch/HotLunch.Web/connectionStrings.config
+HotLunch/HotLunch.Web/log4net.config
