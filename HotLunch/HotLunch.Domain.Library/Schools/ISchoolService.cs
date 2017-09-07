@@ -9,7 +9,9 @@ namespace HotLunch.Domain.Library.Schools
 {
     public enum SchoolValidationError
     {
-        NameIsRequired
+        NameIsRequired,
+        DuplicateSchoolName,
+        SchoolDoesNotExist,
     };
 
     public interface ISchoolService

@@ -41,6 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schools\SchoolService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HotLunch.Domain.Library\HotLunch.Domain.Library.csproj">
+      <Project>{30b82d47-5935-4d4d-905b-dd72e5e6b3ad}</Project>
+      <Name>HotLunch.Domain.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

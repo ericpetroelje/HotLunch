@@ -1,4 +1,7 @@
-﻿using StructureMap;
+﻿using HotLunch.Domain.Library.Schools;
+using HotLunch.Domain.Repository.Schools;
+using HotLunch.Domain.Services.Schools;
+using StructureMap;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +24,12 @@ namespace HotLunch.Web.DependencyInjection
 
         private static void ConfigureRepositories(ConfigurationExpression x)
         {
+            x.For<ISchoolRepository>().Use<SchoolRepository>().Ctor<string>().Is("HotLunch").Singleton();
         }
 
         private static void ConfigureServices(ConfigurationExpression x)
         {
+            x.For<ISchoolService>().Use<SchoolService>().Singleton();
         }
     }
 }
