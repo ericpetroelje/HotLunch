@@ -6,11 +6,7 @@ using System.Web.Mvc;
 
 namespace HotLunch.Web.Controllers
 {
-    public class HomeController : BaseController
+    public class BaseController : Controller
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
     }
 }
