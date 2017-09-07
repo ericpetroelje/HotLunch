@@ -1,7 +1,8 @@
-HotLunch/.vs/
-HotLunch/packages/
-HotLunch/HotLunch.Web/bin/
-HotLunch/HotLunch.Web/obj/
+**/.vs/
+**/packages/
+**/bin/
+**/obj/
 *.user
 HotLunch/HotLunch.Web/connectionStrings.config
 HotLunch/HotLunch.Web/log4net.config
+**/.nuget/
