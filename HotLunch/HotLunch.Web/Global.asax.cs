@@ -1,4 +1,5 @@
-﻿using log4net.Config;
+﻿using HotLunch.Web.DependencyInjection;
+using log4net.Config;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,6 +16,7 @@ namespace HotLunch.Web
         protected void Application_Start()
         {
             XmlConfigurator.ConfigureAndWatch(new FileInfo(Server.MapPath("~/log4net.config")));
+            StructureMapBootstrapper.Configure(IoC.Container);
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
