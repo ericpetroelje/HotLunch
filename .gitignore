@@ -1,0 +1,6 @@
+HotLunch/.vs/
+HotLunch/packages/
+HotLunch/HotLunch.Web/bin/
+HotLunch/HotLunch.Web/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+HotLunch/HotLunch.Web/obj/
+*.user
