@@ -40,7 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\CodedResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schools\ISchoolRepository.cs" />
+    <Compile Include="Schools\ISchoolService.cs" />
+    <Compile Include="Schools\School.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
