@@ -129,13 +129,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SchoolController.cs" />
     <Compile Include="DependencyInjection\IoC.cs" />
     <Compile Include="DependencyInjection\StructureMapBootstrapper.cs" />
     <Compile Include="DependencyInjection\StructureMapControllerFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Schools\CreateSchoolModel.cs" />
+    <Compile Include="Models\Schools\SchoolListModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\HtmlHelperExtensions.cs" />
+    <Compile Include="Util\ModelStateTransferAttributes.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\site.css" />
@@ -157,7 +162,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +192,12 @@
       <Project>{887d6b38-c0ae-4dac-937b-c89c47387942}</Project>
       <Name>HotLunch.Domain.Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\School\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\School\Create.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

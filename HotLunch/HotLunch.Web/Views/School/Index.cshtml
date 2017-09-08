@@ -1,0 +1,28 @@
+﻿@model HotLunch.Web.Models.Schools.SchoolListModel
+
+@{
+    Layout = "~/Views/Shared/_Inside.cshtml";
+}
+<div class="container">
+    <h1>School List</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>School Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.Schools) {
+            <tr>
+                <td>@item.SchoolName</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.SchoolID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.SchoolID })
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary pull-right" })
+</div>

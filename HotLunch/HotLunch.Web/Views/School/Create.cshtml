@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "~/Views/Shared/_Inside.cshtml";
+}
+@model HotLunch.Web.Models.Schools.CreateSchoolModel
+<div class="container">
+    <h1>Create School</h1>
+    @Html.BootstrapValidationSummary()
+    @using (Html.BeginForm("Create", "School"))
+    {
+        <div class="form-group @Html.BootstrapValidationClassFor(m => m.SchoolName)">
+            @Html.LabelFor(m => m.SchoolName, "School Name")
+            @Html.TextBoxFor(m => m.SchoolName, new { @class = "form-control" })
+            <span class="help-block">@Html.ValidationMessageFor(m => m.SchoolName)</span>
+        </div>
+        <a href="@Url.Action("Index","School")" class="btn btn-link pull-left">Cancel</a>
+        <button type="submit" class="btn btn-primary pull-right">Create</button>
+    }
+</div>
